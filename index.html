@@ -18,16 +18,19 @@
   padding: 50px;
   color: white;
 }
- div {
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
   animation-name: example;
-  animation-duration: 4s;
+  animation-duration: 3s;  
+  animation-fill-mode: forwards;
 }
 
 @keyframes example {
-  0%   {backgroud-color: black;}
-  25%  {backgroud-color: red;}
-  50%  {backgroud-color: blue;}
-  100% {backgroud-color: green;}
+  from {top: 0px;}
+  to {top: 200px; background-color: blue;}
 }
  
  
