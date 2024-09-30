@@ -12,8 +12,8 @@
     }
 
 .example {
-  width: 100px;
-  height: 100px;
+  width: 10px;
+  height: 10px;
   background: red;
   padding: 50px;
   color: white;
@@ -24,11 +24,19 @@ div {
   background: red;
   position: relative;
   animation-name: example;
- animation-name: exmple;
   animation-duration: 3s;  
   animation-fill-mode: forwards;
 }
-
+ div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  animation-name: exmple;
+  animation-duration: 3s;  
+  animation-fill-mode: forwards;
+ }
+ 
 @keyframes example {
   from {top: 0px;}
   to {top: 200px; background-color: blue;}
