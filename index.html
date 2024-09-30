@@ -19,36 +19,21 @@
   color: white;
 }
 div {
-  width: 100px;
-  height: 100px;
+  width: 10px;
+  height: 10px;
   background: red;
   position: relative;
   animation-name: example;
   animation-duration: 3s;  
   animation-fill-mode: forwards;
 }
- div {
-  width: 100px;
-  height: 100px;
-  background: red;
-  position: relative;
-  animation-name: exmple;
-  animation-duration: 3s;  
-  animation-fill-mode: forwards;
- }
- 
-@keyframes example {
-  from {top: 0px;}
-  to {top: 200px; background-color: blue;}
-
- 
-@keyframes exmple {
- from {top: 200px; background-color: red;}
-  to {top: 0px;}
-  
- 
+ @keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
 }
- 
 
   tr, th {
     border: 1px solid #000000;
